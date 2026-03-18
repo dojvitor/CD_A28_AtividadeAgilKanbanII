@@ -1,3 +1,9 @@
+def media(lista):
+    medias = []
+    for nome, notas in lista:
+        media = sum(notas) / len(notas)
+        medias.append((nome, media))
+    return medias
 def varredura (lista):
     print(f"Lista atual: {lista}")
     for n in lista:
