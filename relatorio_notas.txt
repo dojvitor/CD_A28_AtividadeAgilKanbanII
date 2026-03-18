@@ -1,0 +1,14 @@
+Relatório das Notas
+
+Lista após varredura:
+[('Vinícius', [100.0, 100.0, 99.0, 90.0, 25.0]), ('Vitor', [25.0, 25.0, 70.0, 10.0])]
+
+Médias dos alunos:
+[('Vinícius', 82.8), ('Vitor', 32.5)]
+
+Alunos aprovados:
+['Vinícius']
+Alunos reprovados:
+['Vitor']
+
+Aluno Top Student: Vinícius
