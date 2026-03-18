@@ -27,3 +27,20 @@ def varredura (lista):
             lista.remove(n)
         print(f"Veja a nova lista após a varredura: \n {lista}")
     return lista
+def relatorio(lista_inicial):
+    try:
+        lista_limpa = varredura(lista_inicial)
+        medias = media(lista_limpa)
+        aprovados, reprovados, top_student = filtro(medias)
+
+        with open("relatorio_notas.txt", "w", encoding='utf-8') as r:
+            r.write("Relatório das Notas\n\n")
+
+            r.write(f"Lista após varredura:\n{lista_limpa}\n\n")
+            r.write(f"Médias dos alunos:\n{medias}\n\n")
+            r.write(f"Alunos aprovados:\n{aprovados}\n")
+            r.write(f"Alunos reprovados:\n{reprovados}\n\n")
+            r.write(f"Aluno Top Student: {top_student}\n")
+
+    except Exception as e:
+        print(f"Erro: {e}")
