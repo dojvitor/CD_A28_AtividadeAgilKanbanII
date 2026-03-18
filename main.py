@@ -4,4 +4,5 @@ lista_alunos = [("", [90.00, 71.00, 50.00, 45.00]), ("Vinícius", [100.00, 100.0
 
 process.varredura(lista_alunos)
 resultado = process.media(lista_alunos)
-print(resultado)
+print(f"Aluno e sua Média: {resultado}")
+aprovados, reprovados, top_student= process.filtro(resultado)
